@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Overpass', sans-serif;
+}
+
+.card-container,
+.thank-you {
+    background-color: hsl(213, 19%, 18%);
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.icon-star {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: hsl(215, 17%, 22%);
+}
+
+.icon-star img {
+    width: 0.9rem;
+}
+
+.card-title {
+    margin: 1.3rem 0 0.5rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.card-text {
+    color: hsl(216, 12%, 54%);
+    font-size: 0.9rem;
+}
+
+.ratings {
+    margin: 1.5rem 0;
+}
+
+.ratings ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: hsl(215, 10%, 43%);
+    font-size: 0.9rem;
+}
+
+.ratings ul li button {
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-family: inherit;
+    background-color: hsl(218, 10%, 21%);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ratings ul li button:hover {
+    background-color: rgba(107, 115, 126, 0.5);
+}
+
+.ratings ul li button:focus {
+    background-color: hsl(25, 97%, 53%);
+}
+
+.submit-btn,
+.rate-again {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.rate-again {
+    margin-top: 1rem;
+    letter-spacing: 0.3rem;
+}
+
+.submit-btn:hover,
+.rate-again:hover {
+    color: hsl(25, 97%, 53%);
+    background-color: whitesmoke;
+}
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.thank-you img {
+    margin-bottom: 1rem;
+}
+
+.thank-you .rating-container {
+    padding: 0.5rem 0.8rem;
+    background-color: hsl(220, 10%, 28%);
+    color: hsl(25, 97%, 53%);
+    border-radius: 100px;
+    font-size: 0.8rem;
+
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width:450px) {
+
+    .card-container,
+    .thank-you {
+        max-width: 90%;
+    }
+}
